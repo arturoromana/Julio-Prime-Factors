@@ -5,12 +5,12 @@ class PrimeFactors
 		lista = []
 		index = 0
 
-		@PRIMO = 2
-
-		while numero % @PRIMO ==0 do
-			numero = numero / @PRIMO
-			lista[index] = @PRIMO
-			index = index + 1
+		for primo in 2..numero
+			while numero % primo ==0 do
+				numero = numero / primo
+				lista[index] = primo
+				index = index + 1
+			end
 		end
 
 		lista.sort
