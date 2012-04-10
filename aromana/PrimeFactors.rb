@@ -7,8 +7,7 @@ class PrimeFactors
 
 		@PRIMO = 2
 
-
-		if numero % @PRIMO ==0 
+		while numero % @PRIMO ==0 do
 			numero = numero / @PRIMO
 			lista[index] = @PRIMO
 			index = index + 1
